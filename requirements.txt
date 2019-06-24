@@ -1,3 +1,4 @@
+sh==1.12.14
 aws-cdk.cdk==CDK_VERSION
 aws-cdk.aws-quickstarts==CDK_VERSION
 aws-cdk.aws-kinesis==CDK_VERSION
@@ -8,6 +9,7 @@ aws-cdk.aws-dynamodb==CDK_VERSION
 aws-cdk.aws-codebuild==CDK_VERSION
 aws-cdk.aws-sqs==CDK_VERSION
 aws-cdk.aws-s3==CDK_VERSION
+aws-cdk.aws-s3-deployment==CDK_VERSION
 aws-cdk.aws-cloudfront==CDK_VERSION
 aws-cdk.aws-route53==CDK_VERSION
 aws-cdk.aws-cloudwatch==CDK_VERSION
@@ -15,6 +17,7 @@ aws-cdk.aws-kms==CDK_VERSION
 aws-cdk.aws-sns==CDK_VERSION
 aws-cdk.aws-cloudformation==CDK_VERSION
 aws-cdk.aws-lambda==CDK_VERSION
+aws-cdk.aws-lambda-event-sources==CDK_VERSION
 aws-cdk.aws-codecommit==CDK_VERSION
 aws-cdk.aws-rds==CDK_VERSION
 aws-cdk.aws-autoscaling-common==CDK_VERSION
@@ -87,4 +90,5 @@ aws-cdk.aws-ecs-patterns==CDK_VERSION
 aws-cdk.aws-route53-targets==CDK_VERSION
 aws-cdk.aws-cloudwatch-actions==CDK_VERSION
 aws-cdk.aws-sam==CDK_VERSION
-aws-cdk.assets==CDK_VERSION
+aws-cdk.aws-events==CDK_VERSION
+aws-cdk.aws-events-targets==CDK_VERSION

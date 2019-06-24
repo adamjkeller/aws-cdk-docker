@@ -13,6 +13,7 @@ WORKDIR /cdk
 
 RUN apk -U --no-cache add \
     bash \
+    git \
     nodejs=10.14.2-r0 \
     npm=10.14.2-r0 &&\
     npm i -g aws-cdk@${CDK_VERSION} &&\
