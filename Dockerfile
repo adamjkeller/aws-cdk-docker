@@ -23,4 +23,5 @@ RUN apk -U --no-cache add \
     pip search aws-cdk | grep 'aws-cdk.' | awk -v cdk="${CDK_VERSION}" '{print $1"=="cdk}' | xargs -I {} pip install {}
 
 ENTRYPOINT ["entrypoint.sh"]
-CMD ["cdk"]
+
+CMD ["--help"]
