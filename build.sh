@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
-version="1.5.0"
-latest="True"
+version="1.4.0"
+latest="False"
 
 if [[ $latest == "True" ]];then
     tags="-t adam9098/aws-cdk:"v$version" -t adam9098/aws-cdk:latest"
