@@ -1,6 +1,16 @@
 # aws-cdk-docker
 
-Docker images for the [aws-cdk](https://github.com/awslabs/aws-cdk). For now, it's one image which includes node 10.14 and python 3.7.3.
+Docker images for the [aws-cdk](https://github.com/awslabs/aws-cdk). 
+
+## Supported versions
+
+1.5.0
+1.4.0
+1.3.0
+1.2.0
+1.1.0
+1.0.0
+0.36.0
 
 ## Description
 
@@ -29,14 +39,9 @@ docker run \
     -e AWS_DEFAULT_REGION=$AWS_DEFAULT_REGION \
     -e AWS_ACCESS_KEY_ID=$AWS_ACCESS_KEY_ID \
     -e AWS_SECRET_ACCESS_KEY=$AWS_SECRET_ACCESS_KEY \
-    -ti adam9098/aws-cdk:v0.33.0 diff
+    -ti adam9098/aws-cdk:v1.5.0 diff
 ```
 
 ### Build your own
 
-* Pass the cdk version you want as a build argument to the docker build command.
-* Example:
-```
-docker build --build-arg CDK_VERSION=0.34.0 -t adam9098/aws-cdk:v0.34.0 .
-```
-* For the build script used, check `./build.sh`
+For the build script used, check `./build.sh` and simply update the version variable and docker repo name.
