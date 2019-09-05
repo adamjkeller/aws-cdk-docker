@@ -11,7 +11,6 @@ aws-cdk.aws-sns-subscriptions==1.6.1
 aws-cdk.core==1.6.1
 aws-cdk.cx-api==1.6.1
 aws-cdk.region-info==1.6.1  
-aws-cdk.aws-quickstarts==0.35.0
 aws-cdk.aws-route53==1.6.1
 aws-cdk.aws-cloudwatch==1.6.1
 aws-cdk.aws-cloudfront==1.6.1
@@ -30,7 +29,6 @@ aws-cdk.aws-dynamodb==1.6.1
 aws-cdk.aws-codebuild==1.6.1
 aws-cdk.aws-elasticloadbalancing==1.6.1
 aws-cdk.aws-autoscaling-common==1.6.1
-aws-cdk.assets-docker==0.35.0
 aws-cdk.aws-route53resolver==1.6.1
 aws-cdk.aws-neptune==1.6.1
 aws-cdk.aws-managedblockchain==1.6.1
@@ -69,7 +67,6 @@ aws-cdk.aws-kinesisanalytics==1.6.1
 aws-cdk.aws-appstream==1.6.1
 aws-cdk.aws-kinesisfirehose==1.6.1
 aws-cdk.aws-iotthingsgraph==1.6.1
-aws-cdk.runtime-values==0.35.0
 aws-cdk.aws-iot==1.6.1
 aws-cdk.aws-config==1.6.1
 aws-cdk.aws-ecs==1.6.1
