@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-version="1.5.0"
+version="1.6.1"
 latest="True"
 
 if [[ $latest == "True" ]];then
