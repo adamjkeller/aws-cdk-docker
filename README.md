@@ -4,6 +4,8 @@ Docker images for the [aws-cdk](https://github.com/awslabs/aws-cdk).
 
 ## Supported versions
 
+- 1.6.1
+- 1.6.0
 - 1.5.0
 - 1.4.0
 - 1.3.0
@@ -39,7 +41,7 @@ docker run \
     -e AWS_DEFAULT_REGION=$AWS_DEFAULT_REGION \
     -e AWS_ACCESS_KEY_ID=$AWS_ACCESS_KEY_ID \
     -e AWS_SECRET_ACCESS_KEY=$AWS_SECRET_ACCESS_KEY \
-    -ti adam9098/aws-cdk:v1.5.0 diff
+    -ti adam9098/aws-cdk:v1.6.1 diff
 ```
 
 ### Build your own
