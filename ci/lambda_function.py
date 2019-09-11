@@ -11,12 +11,12 @@ def codebuild(latest_version):
         projectName=getenv('CODEBUILD_PROJECT'),
         environmentVariablesOverride=[
             {
-                'name': 'cdk-version',
+                'name': 'cdk_version',
                 'value': latest_version,
                 'type': 'PLAINTEXT'
             },
             {
-                'name': 'dockerhub-password',
+                'name': 'dockerhub_password',
                 'value': '/prod/dockerhub-password',
                 'type': 'PARAMETER_STORE'
             },
