@@ -42,8 +42,8 @@ class PackageCode(object):
                 else:
                     print("something went wrong")
 
-        print("==> Symlink for cdk: ln -s {} {}".format(zip_file, file_name))
-        sh.ln('-sf', zip_file, file_name)
+        print("==> Symlink for cdk: ln -f {} {}".format(zip_file, file_name))
+        sh.ln('-f', zip_file, file_name)
 
         return zip_file
 
