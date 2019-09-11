@@ -17,8 +17,8 @@ def codebuild(latest_version):
             },
             {
                 'name': 'dockerhub-password',
-                'value': "/prod/dockerhub-password",
-                'type': 'PARAMETER-STORE'
+                'value': '/prod/dockerhub-password',
+                'type': 'PARAMETER_STORE'
             },
         ],
     )
