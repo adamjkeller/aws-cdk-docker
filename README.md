@@ -2,8 +2,12 @@
 
 Docker images for the [aws-cdk](https://github.com/awslabs/aws-cdk). 
 
+![Build Status](https://codebuild.us-west-1.amazonaws.com/badges?uuid=eyJlbmNyeXB0ZWREYXRhIjoiYTBSZlBlanJqQ0JvOWlzTmtEUVpDYVF6bWRJVUpleDVhalNEVUhCM2FFQWN4bHhJSytTSlY3MnNFdFNtMllISDgxVUxzRFhLU2tybU1lbWNMSmZ2YnRnPSIsIml2UGFyYW1ldGVyU3BlYyI6ImZkeGFXMUZaWUxlUlU2amEiLCJtYXRlcmlhbFNldFNlcmlhbCI6MX0%3D&branch=master)
+
 ## Supported versions
 
+- 1.8.0
+- 1.7.0
 - 1.6.1
 - 1.6.0
 - 1.5.0

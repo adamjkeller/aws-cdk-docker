@@ -31,7 +31,7 @@ class GitHubReleaseMonitor(core.Stack):
 
         self.lambda_function = aws_lambda.Function(
             self, "GitHubReleaseMonitor",
-            code=aws_lambda.AssetCode('4453d86-github-release-monitor.zip'),
+            code=aws_lambda.AssetCode('4a5b3c9-github-release-monitor.zip'),
             handler="lambda_function.lambda_handler",
             runtime=aws_lambda.Runtime.PYTHON_3_7,
             description="Lambda function that monitors aws-cdk repo for releases and triggers codepipeline when new release is available.",
