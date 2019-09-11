@@ -1,1 +1,6 @@
 *.swp
+*.zip
+*/cdk.out/*
+*envs.sh
+*venv
+*package/

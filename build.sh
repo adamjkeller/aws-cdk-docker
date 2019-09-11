@@ -1,6 +1,6 @@
-#!/usr/bin/env bash
+#!/usr/bin/env bash -x
 
-version="1.6.1"
+version="1.7.0"
 latest="True"
 
 if [[ $latest == "True" ]];then
@@ -13,9 +13,9 @@ echo "docker build --no-cache $tags"
 docker build --no-cache $tags .
 
 # Push to dockerhub
-docker push adam9098/aws-cdk:"v$version"
+echo 'docker push adam9098/aws-cdk:"v$version"'
 
 if [[ $version == $latest ]];then
     # Push latest tag to dockerhub
-    docker push adam9098/aws-cdk:latest
+    echo 'docker push adam9098/aws-cdk:latest'
 fi
