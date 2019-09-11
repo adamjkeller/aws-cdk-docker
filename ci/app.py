@@ -8,6 +8,7 @@ from aws_cdk import (
     aws_iam,
     aws_lambda,
     aws_logs,
+    aws_ssm
 )
 
 import sh
@@ -57,6 +58,8 @@ class GitHubReleaseMonitor(core.Stack):
         )
 
         self.lambda_function.add_to_role_policy(self.lambda_codebuild_iam_policy)
+        self.ssm_param = aws_ssm.StringParameter.from_secure_string_parameter_attributes(self, "SSMParam", parameter_name='/prod/dockerhub-password',version=1)
+        self.ssm_param.grant_read(self.codebuild_project)
 
 
 if __name__ == '__main__':
