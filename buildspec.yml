@@ -20,4 +20,8 @@ phases:
       - cdk_version_clean=$(echo $cdk_version|sed 's/v//')
       - sed -i "s|{{CDK_VERSION}}|$cdk_version_clean|g" Dockerfile requirements.txt
       - docker build --no-cache $tags .
+  post_build:
+    commands:
+      - docker push adam9098/aws-cdk:"$cdk_version"
+      - docker push adam9098/aws-cdk:latest
 
