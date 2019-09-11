@@ -2,18 +2,19 @@ version: 0.2
 
 env:
   variables:
-    dockerhub-user: "adam9098"
-    cdk-version: "v1.7.0"
+    dockerhub_user: "adam9098"
+    cdk_version: "v1.7.0"
   parameter-store:
-    dockerhub-password: '/prod/dockerhub-password'
+    dockerhub_password: '/prod/dockerhub-password'
 
 phases:
-  pre-build:
+  pre_build:
     commands:
-      - docker login -u $dockerhub-user -p $dockerhub-password
+      - docker login -u $dockerhub_user -p $dockerhub_password
   build:
     commands:
       - tags="-t adam9098/aws-cdk:"$cdk-version" -t adam9098/aws-cdk:latest"
+      - cdk_version_clean=$(echo $cdk_version|sed 's/v//')
+      - sed -i "s|{{CDK_VERSION}}|$cdk_version_clean|g" Dockerfile requirements.txt
       - docker build --no-cache $tags .
-      - 
 

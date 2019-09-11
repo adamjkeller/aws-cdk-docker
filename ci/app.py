@@ -61,7 +61,7 @@ class GitHubReleaseMonitor(core.Stack):
 
 if __name__ == '__main__':
     # https://github.com/awslabs/aws-cdk/issues/3082
-    _env = {'account': environ['CDK_DEFAULT_ACCOUNT'],'region': environ['CDK_DEFAULT_REGION'],'CODEBUILD_PROJECT': environ.get('CODEBUILD_PROJECT')}
+    _env = {'account': environ['CDK_DEFAULT_ACCOUNT'],'region': environ['CDK_DEFAULT_REGION']}
     app = core.App()
-    GitHubReleaseMonitor(app, 'aws-cdk-docker-release-monitor', env=_env)
+    GitHubReleaseMonitor(app, 'aws-cdk-docker-release-monitor')
     app.synth()
