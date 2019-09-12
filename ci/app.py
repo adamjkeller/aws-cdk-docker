@@ -5,6 +5,8 @@ from aws_cdk import (
     core,
     aws_codebuild,
     aws_dynamodb,
+    aws_events,
+    aws_events_targets,
     aws_iam,
     aws_lambda,
     aws_logs,
@@ -43,6 +45,15 @@ class GitHubReleaseMonitor(core.Stack):
             },
             log_retention=aws_logs.RetentionDays.ONE_WEEK,
             timeout=core.Duration.seconds(10)
+        )
+
+        self.cron_event = aws_events.Rule(
+            self, "CWEventRuleCron",
+            description="Triggers cron every 1 hour to check for new releases to cdk repo",
+            schedule=aws_events.Schedule.cron(minute="0/60"),
+            targets=[
+                aws_events_targets.LambdaFunction(self.lambda_function)
+            ]
         )
 
         self.dynamo_table.grant_read_write_data(self.lambda_function)
