@@ -15,7 +15,7 @@ RUN apk -U --no-cache add \
     git \
     nodejs=10.16.3-r0 \
     npm=10.16.3-r0 &&\
-    npm i -g aws-cdk@{{CDK_VERSION}} &&\
+    npm i -g ---unsafe-perm aws-cdk@{{CDK_VERSION}} &&\
     pip3 install -r requirements.txt &&\
     rm -rf /var/cache/apk/*
 
