@@ -31,7 +31,7 @@ docker run \
     -e AWS_DEFAULT_REGION=$AWS_DEFAULT_REGION \
     -e AWS_ACCESS_KEY_ID=$AWS_ACCESS_KEY_ID \
     -e AWS_SECRET_ACCESS_KEY=$AWS_SECRET_ACCESS_KEY \
-    -ti adam9098/aws-cdk:v1.6.1 diff
+    -ti adam9098/aws-cdk:v1.10.0 diff
 ```
 
 ### Build your own

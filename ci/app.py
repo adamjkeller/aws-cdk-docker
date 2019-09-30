@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
-# CDK v1.7.0
+# CDK v1.10.0
 from aws_cdk import (
     core,
     aws_codebuild,

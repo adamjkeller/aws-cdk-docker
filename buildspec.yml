@@ -3,7 +3,7 @@ version: 0.2
 env:
   variables:
     dockerhub_user: "adam9098"
-    cdk_version: "v1.8.0"
+    cdk_version: "v1.10.0"
   parameter-store:
     dockerhub_password: '/prod/dockerhub-password'
 
