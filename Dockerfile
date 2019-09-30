@@ -16,8 +16,7 @@ RUN apk -U --no-cache add \
     nodejs=10.16.3-r0 \
     npm=10.16.3-r0 &&\
     npm i -g aws-cdk@{{CDK_VERSION}} &&\
-    pip3 install -r requirements.txt &&\
-    rm -rf /var/cache/apk/*
+    pip3 install -r requirements.txt
 
 ENTRYPOINT ["entrypoint.sh"]
 
