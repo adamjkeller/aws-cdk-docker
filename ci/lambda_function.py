@@ -4,6 +4,7 @@ import json
 import boto3
 import requests
 from os import getenv
+from packaging import version
 
 def codebuild(latest_version):
     cb = boto3.client('codebuild')
@@ -44,7 +45,8 @@ def dynamo(latest_release):
 def lambda_handler(event, context):
     r = requests.get(getenv('REPO_URL'))
     j = json.loads(r.text)
-    latest_release = max([z for x in j for y,z in x.items() if y == 'tag_name'])
+    releases = [version.parse(z) for x in j for y,z in x.items() if y == 'tag_name']
+    latest_release = 'v{}'.format(max(releases).public)
     results = dynamo(latest_release)
     if results:
         codebuild(latest_release)
