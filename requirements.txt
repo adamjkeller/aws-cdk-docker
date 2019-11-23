@@ -1,3 +1,4 @@
+boto3
 sh==1.12.14
 aws-cdk.alexa-ask=={{CDK_VERSION}}
 aws-cdk.app-delivery=={{CDK_VERSION}}
